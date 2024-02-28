@@ -12,7 +12,72 @@
 }
 
 .container {
-  background-color: var(--branco);
+  background-image:  url(../img/nasa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.navbar {
+  background-color: #00032b;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+ 
+}
+
+.navbar a {
+  margin-right: 100px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.navbar p {
+  margin-left: 50px;
+  color: #fff;
+}
+.pesquisar {
+  width: 600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#search {
+  height: 50px;
+  width: 350px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding-left: 15px;
+  font-size: 13px;
+}
+
+#search:focus{
+  outline: 0;
+}
+
+#button {
+  height: 50px;
+  width: 100px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#img-search {
+  height: 50px;
+  width: 50px;
 }

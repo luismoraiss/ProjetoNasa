@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login-register.css"> 
+    
+</head>
+
+
+<body>
+
+  
+ 
+    <div class="container" id="container">
+
+        <div class="form-container sign-up">
+            <form>
+                <h1>Criar uma conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+
+                </div>
+                <span>ou use seu e-mail para registro</span>
+                <input type="text" placeholder="Name">
+                <span class="span-required">Digite somente letras</span>
+                <input type="email" placeholder="Email">
+                <span class="span-required">Digite seu email corretamente</span>
+                <input type="password" placeholder="Password">
+                <button >Sign Up</button>
+
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+
+                </div>
+                <span>ou use sua senha de e-mail</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Esqueceu sua senha?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-painel toggle-left">
+                    <h1>Bem-vindo de volta!</h1>
+                    <p>Insira seus dados empresariais para usar todos os recursos do site</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+
+                <div class="toggle-painel toggle-right">
+                    <h1>Olá, amigo!!</h1>
+                    <p>Registre-se com seus dados empresariais para usar todos os recursos do site</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+   
+    <script src="../js/login-regsiter.js"></script>
+</body>
+
+</html>
