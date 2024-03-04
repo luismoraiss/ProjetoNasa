@@ -11,43 +11,25 @@
   font-family: "Montserrat", sans-serif;
 }
 
-body{
-  background-image:  url(../img/nasa.jpg);
-  background-repeat: no-repeat;
+body {
+  background-image: url(../img/nasa.jpg);
+  background-repeat: repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.navbar {
-  background-color:#1d2741;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar a {
-  margin-right: 100px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 19px;
-}
-
-.navbar p {
-  margin-left: 50px;
-  color: #fff;
-}
-
-main{
+main {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 100px;
+  gap: 10px;
+  align-items: center;
   justify-content: center;
 }
 .pesquisar {
@@ -56,15 +38,13 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
- 
+}
+.pesquisar label {
+  color: white;
 }
 
-
-.pesquisar label{
-  color:var(--branco)
-}
-
-#search , #search1{
+#search,
+#search1 {
   height: 50px;
   width: 250px;
   border: none;
@@ -77,7 +57,7 @@ main{
   margin-right: 20px;
 }
 
-#search:focus{
+#search:focus {
   outline: 0;
 }
 
@@ -88,8 +68,6 @@ main{
   border: none;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  
- 
 }
 
 #img-search {
@@ -97,13 +75,39 @@ main{
   width: 50px;
 }
 
-.caixa-imagens{
+.caixa-imagens {
   background-color: var(--gray-800);
   color: var(--white);
   padding: 3rem 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+}
+
+#gallery {
+  width: 90vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: space-around;
+}
+
+#gallery p {
+  text-align: center;
+}
+.imagem {
+  background: white;
+  width: 350px;
+  height: 370px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.imagem p {
+  color: black;
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -120,4 +124,26 @@ main{
   .image-container {
     flex: 1 1 calc(100% - 20px); /* 1 imagem por linha em telas muito pequenas */
   }
+}
+
+.nav {
+  background-color: white;
+  width: 1300px;
+  border-radius: 5px;
+}
+
+.img-galeria {
+  width: 300px;
+}
+
+#btn-informacao{
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+#btn-informacao a{
+  text-decoration: none;
+  color: black;
 }
