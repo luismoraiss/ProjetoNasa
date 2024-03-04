@@ -11,7 +11,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.container {
+body{
   background-image:  url(../img/nasa.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,14 +24,12 @@
 }
 
 .navbar {
-  background-color: #00032b;
-  width: 100vw;
+  background-color:#1d2741;
+  width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
- 
 }
 
 .navbar a {
@@ -45,23 +43,38 @@
   margin-left: 50px;
   color: #fff;
 }
+
+main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 .pesquisar {
   width: 600px;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+ 
 }
 
-#search {
+
+.pesquisar label{
+  color:var(--branco)
+}
+
+#search , #search1{
   height: 50px;
-  width: 350px;
+  width: 250px;
   border: none;
-  border-radius: 10px 0 0 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--branco);
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding-left: 15px;
   font-size: 13px;
+  margin-right: 20px;
 }
 
 #search:focus{
@@ -71,13 +84,40 @@
 #button {
   height: 50px;
   width: 100px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
   border: none;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  
+ 
 }
 
 #img-search {
   height: 50px;
   width: 50px;
+}
+
+.caixa-imagens{
+  background-color: var(--gray-800);
+  color: var(--white);
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    flex-direction: column;
+  }
+
+  .image-container {
+    flex: 1 1 calc(50% - 20px); /* 2 imagens por linha em telas menores */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-container {
+    flex: 1 1 calc(100% - 20px); /* 1 imagem por linha em telas muito pequenas */
+  }
 }

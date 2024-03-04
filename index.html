@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="navbar">
-        <div><p>Lorem Ipsum</p></div>
-        <div>
-          <a href="./pages/login-registro.html">Login</a>
-          <a href="./pages/login-registro.html">Registro</a>
-        </div>
-      </div>
-      <!-- Início Main -->
-      <main>
-        <div class="pesquisar">
-          <i
-            class="fa-solid fa-magnifying-glass"
-            id="img-search"
-            style="color: #000000"
-          ></i>
-          <input type="text" id="search" />
-          <button id="button">Buscar</button>
-        </div>
-      </main>
-    </div>
 
-    <script src="./js/index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+      <p>Lorem Ipsum</p>
+      <li>
+        <a href="./pages/login-registro.html">Login</a>
+        <a href="./pages/login-registro.html">Registro</a>
+      </li>
+    </nav>
+   Início Main
+    <main>
+
+      <div class="pesquisar">
+
+        <label>Data Inicial</label>
+        <input type="date" id="search" value="2024-03-04" min="2015-04-01" max="2024-04-30" />
+        <label>Data Final</label>
+        <input type="date" id="search1" value="2024-03-04"/>
+
+        <button id="button">Buscar</button>
+        
+      </div>
+      
+       <!-- Galeria de imagens -->
+       <div id="gallery"></div>
+  </main>
+  
+
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
