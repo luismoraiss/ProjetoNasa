@@ -38,6 +38,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 100px;
+
 }
 .pesquisar label {
   color: white;
@@ -55,6 +57,7 @@ main {
   padding-left: 15px;
   font-size: 13px;
   margin-right: 20px;
+ 
 }
 
 #search:focus {
@@ -91,22 +94,26 @@ main {
   flex-wrap: wrap;
   gap: 100px;
   justify-content: space-around;
+  position:sticky;
 }
 
 #gallery p {
   text-align: center;
 }
 .imagem {
-  background: white;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.776);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
   width: 350px;
-  height: 370px;
+  height: 450px;
   border-radius: 10px;
   display: grid;
   place-items: center;
 }
 
 .imagem p {
-  color: black;
+  color: white;
   
 }
 

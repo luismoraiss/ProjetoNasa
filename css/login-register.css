@@ -81,6 +81,7 @@ input:focus {
   height: 45px;
   width: 100%;
   font-weight: 500;
+  margin-top: 20px;
 }
 
 .input-box .icon {
@@ -92,4 +93,10 @@ input:focus {
 
 .input-box input:focus ~ label {
   top: -10px;
+}
+
+.validacao{
+  font-size: 13px;
+  color: rgb(244, 0, 0);
+  font-family: bold;
 }

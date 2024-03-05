@@ -1,18 +1,34 @@
-import data from "../data.json" assert { "type": "json" };
+
+const obj = [
+  {
+    "id": 1,
+    "usuario": "luis",
+    "senha": "123456"
+  }
+ 
+]
 debugger
-const btn = document.querySelector("#login");
-btn.addEventListener('click', (event) => {
-  event.preventDefault();
+
+const btn = document.getElementById('login')
+const validacao = document.getElementById('span1')
+const validacao1 = document.getElementById('span2')
+
+
+btn.addEventListener('click', () => {
+event.preventDefault();
   const user = document.getElementById("user").value;
   const password = document.getElementById("password").value;
+ 
 
-  const login = data.find(
+  const login = obj.find(
     (obj) => obj.usuario === user && obj.senha === password
   );
 
   if (login) {
-    window.location = "../index.html";
+    window.location = "../pages/pag.html";
   } else {
-    alert("etetete");
+    validacao.innerHTML = `Email Inválido`
+    validacao1.innerHTML = `Senha Incorreta`
+    window.location = "./index.html"
   }
 });

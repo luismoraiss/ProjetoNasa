@@ -31,8 +31,8 @@ function renderizarImagem(data) {
     divImagens.innerHTML = `
         <p>${element.title}<br>${element.date}</p>
         
-        <img class= "img-galeria" src="${element.url}" widht=300px height=300px>
-        <button id="btn-informacao"><a href="../pages/informacao.html">Ver mais</a></button>
+        <img class= "img-galeria" src="${element.hdurl}" widht=300px height=300px>
+      
         
     `;
     console.log(element);
@@ -40,30 +40,7 @@ function renderizarImagem(data) {
   });
 }
 
-const btnInformacao = document.getElementById("btn-informacao");
-
-btnInformacao.addEventListener("click", () => {
-  window.location.href = "./pages/informacao.html";
-});
 
 
-function renderizarInformacao{
-    const container1 = document.getElementById(`contain`);
-    console.log(data);
 
-  data.forEach((element) => {
-    const divImagens1 = document.createElement(`div`);
-    divImagens1.classList.add(`imagem`);
 
-    divImagens1.innerHTML = `
-        <h1>${element.title}<h1>
-        <h3>${element.date}</h3>
-        
-        <img class= "img-galeria" src="${element.url}" widht=300px height=300px>
-        <p>${element.explanation}</p>
-        
-    `;
-    console.log(element);
-    container.appendChild(divImagens1);
-  });
-}
